@@ -1,0 +1,98 @@
+/* Common style */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Font style */
+.poppins {
+    font-family: "Poppins", sans-serif;
+    color: #707070;
+}
+.eb-garamond {
+    font-family: "EB Garamond", serif;
+    font-weight: 800;
+}
+
+/* Color */
+.dark-02 {
+    color: #414040;
+}
+.dark-04{
+    color: #A0A0A0;
+}
+
+/* flex/grid */
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+
+/* Shared styles */
+.btn {
+    height: 64px;
+    background-color: #B68C5A;
+    border-radius: 8px;
+    font-size: 1.16em;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+.align{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.rounded{
+    border-radius: 8px;
+}
+
+/* Navbar styles */
+.navbar {
+    justify-content: center;
+    align-items: center;
+    gap: 135px;
+    margin-top: 50px;
+}
+.navbar ul {
+    list-style: none;
+    gap: 30px;
+
+}
+.nav-btn {
+    width: 220px;
+}
+.fa-chevron-right{
+    opacity: 70%;
+}
+
+/* banner style */
+.banner{
+    background-image: url(/images/banner.png);
+}
+.banner-container{
+    color: white;
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0), rgba(17, 17, 17, 1));
+    height: 550px;
+    text-align: center;
+    padding: 95px 239px;
+    margin-top: 50px;
+}
+.banner-container h1{
+    font-size: 72px;
+}
+.banner-container input{
+    width: 500px;
+    height: 64px;
+    padding-left: 20px;
+    border: none;
+    margin-right: 24px;
+}
+.banner-container p{
+    margin: 24px 0px 32px;
+}
+.banner-container button{
+    width: 150px;
+}
