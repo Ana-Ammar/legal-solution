@@ -48,7 +48,13 @@
 .rounded{
     border-radius: 8px;
 }
-
+.sec-header{
+    font-size: 2.5em;
+}
+.sec-center-margin-top{
+    text-align: center;
+    margin-top: 120px;
+}
 /* Navbar styles */
 .navbar {
     justify-content: center;
@@ -74,14 +80,14 @@
 }
 .banner-container{
     color: white;
-    background: linear-gradient(to bottom, rgba(17, 17, 17, 0), rgba(17, 17, 17, 1));
+    background-image: url(/images/Rectangle\ 5.png);
     height: 550px;
     text-align: center;
     padding: 95px 239px;
     margin-top: 50px;
 }
 .banner-container h1{
-    font-size: 72px;
+    font-size: 4.5em;
 }
 .banner-container input{
     width: 500px;
@@ -95,4 +101,206 @@
 }
 .banner-container button{
     width: 150px;
+}
+
+
+/* practice section - section one */
+.sec-description{
+    width: 714px;
+    margin: 24px auto 64px;
+}
+.card-container{
+    grid-template-columns: repeat(3, 1fr);
+}
+.card{
+    width: 401px;
+    height: 499px;
+    text-align: center;
+    padding: 56px 71px 71px;
+}
+.card-h{
+    font-size: 2em;
+    margin: 32px 0 24px;
+}
+.card-description{
+    margin-bottom: 32px;
+}
+.border-top{
+    border-top: 1px solid #E7E7E7;
+}
+.border-left-right{
+    border-left: 1px solid #E7E7E7;
+    border-right: 1px solid #E7E7E7;
+}
+.criminal-background{
+    background: linear-gradient(to bottom, rgba(243, 243, 243, 1), rgba(243, 243, 243, 0));
+}
+
+/* Client say - Section two */
+@keyframes slider {
+    0% {
+        background-image: url(/images/slider-1.jpg);
+        /* background-position: center; */
+    }
+    50%{
+        background-image: url(/images/slider-2.jpg);
+        
+    }
+    100%{
+        background-image: url(/images/slider-3.jpg);
+    }
+}
+
+.slide-image{
+    animation: slider 10s ease-in-out 0s infinite alternate;
+    background-position: center;
+    height: 500px;
+}
+.client-container{
+    height: 100%;
+    color: white;
+    background-image: url(/images/Rectangle\ 7.png);
+}
+.client-photo{
+    margin-top: 96px;
+    width: 70px;
+}
+.client-name{
+    font-size: 1.5em;
+}
+.client-description{
+    margin-top: 32px;
+    width: 900px;
+}
+
+/* asked question sec three */
+.tag-minus{
+    justify-content: space-between;
+    align-items: center;
+}
+.question{
+    width: 570px;
+    height: 189px;
+    background-color: #F3F3F3;
+    padding: 32px;
+}
+.question-1{
+    width: 570px;
+    height: 100px;
+    background-color: #F3F3F3;
+    padding: 32px;
+    margin-top: 30px;
+}
+.question-description{
+    text-align: left;
+    margin-top: 16px;
+}
+.faq-container{
+    gap: 30px;
+}
+
+
+
+
+
+/* Responsive for mobile device */
+@media screen and (max-width: 576px) {
+    
+    /* Navbar */
+
+    .navbar{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .navbar ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Banner */
+    .banner, .slide-image{
+        width: 100%;
+    }
+    .banner-container {
+        padding: 0%;
+        height: 100%;
+        padding-bottom: 20px;
+    }
+    .banner-container input{
+        margin: 0 auto 20px;
+    }
+
+    /* Practice section */
+
+    .card-container{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .sec-description{
+        width: 100%;
+        padding: 0px 20px 0px;
+    }
+
+    /* client say section two*/
+    .client-container, 
+    .client-description, 
+    .question, .question-1,
+    .question-image{
+        width: 100%;  
+    }
+
+    /* Asked question - section three */
+    .faq-container{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+}
+
+/* Responsive for medium devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    
+    /* Navbar */
+    .navbar{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    /* banner */
+    .banner{
+        width: 100%;
+    }
+    .banner-container{
+        padding: 50px 50px;
+        height: 600px;
+    }
+    .banner-container input{
+        margin-bottom: 20px;
+    }
+
+    /* Practice section */
+    .card-container{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .sec-description{
+        width: 100%;
+        padding: 0px 20px 0px;
+    }
+
+    /* client say section two*/
+    .client-container, 
+    .client-description{
+        width: 100%;  
+    }
+
+        /* Asked question - section three */
+    .faq-container{
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
