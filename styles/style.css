@@ -22,7 +22,9 @@
 .dark-04{
     color: #A0A0A0;
 }
-
+.dark-07{
+    background-color: #F3F3F3;
+}
 /* flex/grid */
 .flex {
     display: flex;
@@ -198,7 +200,42 @@
     gap: 30px;
 }
 
+/* Contact us - section four */
+.contact-container{
+    gap: 30px;
+}
+.contact-card-container{
+    grid-template-columns: repeat(2, 1fr);
+}
+.contact-card{
+    width: 285px;
+    height: 285px;
+    padding-top: 65px;
+}
+.border-right{
+    border-right: 1px solid #E7E7E7;
+}
+.contact-card h4{
+    font-size: 1.5em;
+    margin: 16px;
+}
 
+.info-input{
+    width: 570px;
+    height: 72px;
+    border: none;
+    font-size: 1em;
+    padding: 23px;
+    display: block;
+    margin-bottom: 30px;
+}
+.info-container textarea{
+    height: 162px;
+    resize: none;
+}
+.info-container button{
+    width: 570px;
+}
 
 
 
@@ -228,6 +265,7 @@
     }
     .banner-container input{
         margin: 0 auto 20px;
+        width: 100%;
     }
 
     /* Practice section */
@@ -245,15 +283,20 @@
     .client-container, 
     .client-description, 
     .question, .question-1,
-    .question-image{
+    .question-image,
+    .info-input, 
+    .contact-card,
+    .info-container button {
         width: 100%;  
     }
 
     /* Asked question - section three */
-    .faq-container{
+    .faq-container, .contact-container{
         flex-direction: column;
         gap: 50px;
     }
+
+
 
 }
 
@@ -295,7 +338,7 @@
     }
 
         /* Asked question - section three */
-    .faq-container{
+    .faq-container, .contact-container{
         flex-direction: column;
         gap: 50px;
         justify-content: center;
